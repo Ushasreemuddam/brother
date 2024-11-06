@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Wedding Invitation</title>
+    <style>
+        body {
+            background-color: #f3ebe4;
+            font-family: 'Cinzel', serif;
+            color: #4b2e1e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0 10px;
+        }
+        .invitation-card {
+            max-width: 600px;
+            background-color: #fff;
+            border: 4px solid #d4a373;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 100%;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 24px;
+            color: #a0522d;
+            font-weight: bold;
+            font-family: 'Great Vibes', cursive;
+            
+        }
+        .title-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;   
+            gap: 10px;
+           
+        }
+        .title-section img {
+            width: 15%;
+            max-width: 60px;
+            height: auto;
+        }
+        .title {
+            font-size: 28px;
+            color: #8b4513;
+            font-weight: bold;
+        }
+        .divider {
+            width: 90%;
+            height: 2px;
+            background-color: #d4a373;
+            margin: 15px auto;
+        }
+        .names {
+            font-size: 18px;
+            font-family: 'Great Vibes', cursive;
+            color: #b22222;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            opacity: 0;
+            transform: translateY(-10px);
+            animation: fadeIn 0.8s forwards 0.6s;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #a0522d;
+        }
+        .groom, .bride {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .groom img {
+            position: absolute;
+            left: -120px;
+            width: 120px;
+            height: auto;
+            top: -7px;
+        }
+        .bride img {
+            position: absolute;
+            right: -120px;
+            width: 120px;
+            height: auto;
+            top: -70px;
+        }
+        .venue-reception {
+            display: flex;
+            align-items: center;
+            background-color: #f9f3ec;
+            border: 2px dashed #d4a373;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            gap: 15px;
+            opacity: 0;
+            transform: translateY(-10px);
+            animation: fadeIn 0.8s forwards 0.9s;
+        }
+        .venue-reception img {
+            width: 30%;
+            max-width: 200px;
+            height: auto;
+        }
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 15px;
+            color: #6e4e35;
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(-10px);
+            animation: fadeIn 0.8s forwards 1.2s;
+        }
+        .footer img {
+            width: 20%;
+            max-width: 80px;
+            height: auto;
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                font-size: 18px;
+                gap: 0;
+            }
+            .title-section img {
+                width: 20%;
+            } 
+            .venue-reception img {
+                width: 30%;
+            }
+            .footer img {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-card">
+        <div class="header">
+            <span>Srerasthu</span>
+            <span>Shubhamasthu</span>
+            <span>Avighnamasthu</span>
+        </div>
+        
+        <div class="title-section">
+            <img src="ganesh.jpg" alt="Ganesh Idol">
+            <div class="title">Wedding Invitation</div>
+            <img src="welcome.jpg" alt="Welcome">
+        </div>
+
+        <div class="divider"></div>
+        
+        <p>We warmly invite you and your family to grace us with your presence on the auspicious occasion of the wedding of our beloved son</p>
+        
+        <div class="names">
+            <div class="groom">
+                <img src="groom.webp" alt="Groom Image">
+                <span class="highlight">Chi. Kranthi Reddy</span>
+            </div>
+            <div>with</div>
+            <div class="bride">
+                <span class="highlight">Chi. La. Sow. Shravya</span>
+                <img src="bride.png" alt="Bride Image">
+            </div>
+            <p>(Beloved daughter of Sri Immareddy Venkat Reddy and Dhanalaxmi, residents of Nuthanakal, Dist. Suryapeta)</p>
+        </div>
+
+        <div class="venue-reception">
+            <img src="muhurtham.png" alt="Muhurtham">
+            <div>
+                <p><strong>Sumuhurtham:</strong><br> 
+                Thursday, 14th November 2024 at 10:32 AM<br> 
+                Ashwini Nakshatram, Dhanur Lagnam</p>
+                <p><strong>Venue:</strong><br> 
+                I.L.R. Function Hall, Nuthanakal, Dist. Suryapeta</p>
+                <p><strong>Reception:</strong><br> 
+                Friday, 15th November 2024 at 12:00 Noon<br> 
+                Reddy Gardens, Near Sannur X Road, NANCHARIMADUR, Mdl. Thorrur, Dist. Mahabubabad</p>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="footer">
+            <img src="kalisham.png" alt="Kalisham Icon">
+            <div>
+                <p>Your's, <strong>Muddam Mahaboob Reddy & Jyothi</strong><br> 
+                Village Ammapuram, Mdl. Thorrur, Dist. Mahabubabad</p>
+                <p>With best compliments from:<br> 
+                Relatives & Friends</p>
+            </div>
+            
+            <img src="sannayi.png" alt="Sannayi Icon">
+        </div>
+    </div>
+</body>
+</html>
